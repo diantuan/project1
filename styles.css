@@ -1,0 +1,38 @@
+body{background-image:url(https://t3.ftcdn.net/jpg/03/51/51/28/360_F_351512882_2kFH8IaSe4lyA7SXBLzEXyGKNEgbO1iH.jpg);
+  background-repeat:no-repeat;
+  background-size:1600px 900px;
+  font-family:Courier}
+  fieldset{background-image:linear-gradient(90deg,rgba(255,0,160,.2), rgba(160,0,255,.2));
+  max-width:600px;min-width:300px;
+  border:none;
+  margin:0 auto}
+  h1,p{text-align:center}
+  label{display:block}
+  #name-label, #email-label, #number-label {text-align:center
+  ;
+  font-weight:bold}
+  #name, #email, #number{width:80%;
+  display:block;
+  text-align:center;
+  margin:0 auto;
+  border:none;
+  background-color:rgba(130,0,150,0.4);
+  color:white}
+  input::placeholder {color:white}
+  select{background-color:rgba(130,0,150,0.4)}
+  textarea{background-color:rgba(130,0,150,0.4);
+  display:block;
+  width:80%;
+  margin:0 auto;}
+  textarea::placeholder{color:white}
+  #submit{display:block;
+  margin:0 auto;
+  background-color:pink;
+  border:none;
+  height:25px;
+  margin-top:10px;
+  color:gray}
+  #submit:hover{background-color:rgba(130,0,150,0.4)}
+  #submit:active{color:white}
+  
+  
