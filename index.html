@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Survey Form</title>
+  <title>Drag Race Survey Form</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <h1 id="title">Survey Form</h1>
+    <h1 id="title">Drag Race Survey Form</h1>
     <p id="description">Please answer the survey form. Thanks!</p>
 
 <main id="main">
-  <form id="survey-form">
+  <form id="survey-form" method="get">
     <fieldset>
 
 
 <label id="name-label">Name
-  <input type="text" id="name" required placeholder="name pls"> 
+  <input type="text" id="name" required name="name" placeholder="name pls"> 
   </label>
 <label id="email-label">Email
-  <input type="email" required id="email" placeholder="asdf@gmail.com">
+  <input type="email" required id="email" placeholder="asdf@gmail.com" name="email">
   </label>
 <label id="number-label">Age(optional)
-  <input type="number" id="number" min="13" max="120" placeholder="13+">
+  <input type="number" id="number" min="13" max="120" placeholder="13+" name="age">
   </label>
-<label>Which option describes your current role?<select id="dropdown">
-  <option>Select current role</option>
-  <option>Student</option>
-  <option>Full-time Job</option>
-  <option>Full-time Learner</option>
-  <option>Prefer not to say</option>
-  <option>Other</option>
+<label>Which option describes your Favorite Drag Race Philippines Season?<select id="dropdown" name="season">
+  <option disabled selected value="">Select season</option>
+  <option value="1">Season 1</option>
+  <option value="2">Season 2</option>
+  <option value="3">Season 3</option>
+  <option value="0">Prefer not to say</option>
+  
   </select>
   </label>
 <p>Would you recommend this to a friend?</p>
   <label>
-    <input type="radio" name="reco" value="1"class="radio"> Definitely
+    <input type="radio" name="reco" value="yes"class="radio"> Definitely
  </label>
  <label>
-   <input type="radio" name="reco" value="2" class="radio"> Maybe
+   <input type="radio" name="reco" value="maybe" class="radio"> Maybe
 </label>
 <label>
-     <input type="radio" name="reco" value="3" class="radio"> Not Sure
+     <input type="radio" name="reco" value="no" class="radio"> Not Sure
  </label>
 
 
@@ -52,28 +52,26 @@
 <p>What would you like to see improve?</p>
 
 <label>
-<input type="checkbox" value="1"> Front-end projects
+<input type="checkbox" name="improvement" value="1"> Better Production Quality
 </label>
 
 <label>
-<input type="checkbox" value="2">Back-end Projects
+<input type="checkbox" value="2" name="improvement">Better Casting
 </label>
 
 <label>
-<input type="checkbox" value="3">Data Visualization
+<input type="checkbox" value="3" name="improvement">Better Challenges
 </label>
 
 <label>
-<input type="checkbox" value="4">Challenges
+<input type="checkbox" value="4" name="improvement">Better Judges
 </label>
 
 <label>
-<input type="checkbox" value="5">Open Source Community
+<input type="checkbox" value="5" name="improvement">Better Finale
 </label>
 
-<label>
-<input type="checkbox" value="6">Gitter help rooms
-</label>
+
 
 
 
@@ -81,7 +79,7 @@
 
 <p> Any comments or suggestions? </p>
 
-<textarea rows="4" cols="30" placeholder="write your comments here">
+<textarea rows="4" cols="30" placeholder="write your comments here" name="comments">
 
 </textarea>
 <hr>
